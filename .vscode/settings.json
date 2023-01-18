@@ -1,0 +1,46 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sfdx": true
+  },
+  "cSpell.words": [
+    "Animales",
+    "Borrar",
+    "Callouts",
+    "charact",
+    "clicando",
+    "contacto",
+    "contactos",
+    "Crear",
+    "cuenta",
+    "dady",
+    "específica",
+    "flud",
+    "imprimir",
+    "morthy",
+    "Pagina",
+    "Recuperar",
+    "requestbody",
+    "Ricki",
+    "thiscontact",
+    "tostring",
+    "upsert",
+    "Webservices"
+  ],
+  "cSpell.enableFiletypes": [
+    "Apex",
+    "apex",
+    "apex-anon",
+    "apexlog",
+    "bat",
+    "bibtex",
+    "blade",
+    "clojure",
+    "code-runner-output",
+    "code-text-binary",
+    "coffeescript",
+    "compressionTargetFile",
+    "concourse-task-yaml"
+  ]
+}

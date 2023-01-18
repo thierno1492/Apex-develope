@@ -1,0 +1,33 @@
+<template>
+  <div class="container-flud">
+    <lightning-card title="HTT request salesforce friday" icon-name="custom:custom63">
+      <div class="slds-m-around_medium">
+        <div class="slds-m-bottom_small">
+          <lightning-input type="text" value={name} label="character Name" onchange={searchKeyword}></lightning-input>
+        </div>
+        <lightning-button label="Search" onclick={handleSearchKeyword} variant="brand"></lightning-button>
+        <div class="container">
+          <div  class="ready" if:false={ready}>
+            Loading…  
+          </div>
+
+          <template for:each={characters} for:item="character">
+            <div if:true={ready} class="items" key={character.id}>
+              <img src={character.image} alt="Avatar" />
+              <h4> {character.name}</h4>
+            </div>
+          </template>
+        </div>
+        <div class="padre-btn">
+          <lightning-button variant="brand" class="slds-button" label="prev " onclick={handleClickPrev}>
+          </lightning-button>
+          <p class="counter">Counter:{currentPage}</p>
+          <lightning-button variant="brand" class="slds-button" label="next " onclick={handleClick}>
+          </lightning-button>
+        </div>
+      </div>
+    </lightning-card>
+  </div>
+
+
+</template>
