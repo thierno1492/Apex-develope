@@ -1,0 +1,5 @@
+@IsTest
+Private class EmailMangerTest{
+
+  
+}
