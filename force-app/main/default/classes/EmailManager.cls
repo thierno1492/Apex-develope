@@ -1,5 +1,5 @@
 public class EmailManager {
-  public static void sendMail( string address, String subject ,string body){
+  public Static void sendMail( string address, String subject ,string body){
  Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
  string[] toAddresses = new String[]{address};
  mail.setToAddresses(toAddresses);

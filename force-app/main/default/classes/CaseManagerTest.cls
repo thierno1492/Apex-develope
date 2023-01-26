@@ -3,8 +3,7 @@ private class CaseManagerTest {
     @isTest static void testGetCaseById() {
         Id recordId = createTestRecord();
         // Set up a test request
-        RestRequest request = new RestRequest();
-        request.requestUri =
+        RestRequest request = new RestRequest();        request.requestUri =
             'https://curious-otter-nwkqe1-dev-ed.lightning.force.com/services/apexrest/Cases/'
             + recordId;
         request.httpMethod = 'GET';

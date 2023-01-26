@@ -1,1 +1,1 @@
-ConsultaSQLquery.ConsultaSQLqueryDemo();
+CalloutClass.makeCallout();
