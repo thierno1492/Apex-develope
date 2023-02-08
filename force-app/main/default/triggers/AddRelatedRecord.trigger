@@ -1,8 +1,8 @@
 trigger AddRelatedRecord on Account(after insert, after update) {
   List<Opportunity> oppList = new List<Opportunity>();
     // Get the related opportunities for the accounts in this trigger
-    Map<Id,Account> accountWithOpp = new Map<Id,Account>();
-   accountWithOpp =[SELECT Id ,(SELECT Id FROM opportunities) FROM Account WHERE Id In:Trigger.new];
+    Map<Id,Account> accountWithOpp = new Map<Id,Account>(
+  [SELECT Id ,(SELECT Id FROM opportunities) FROM Account WHERE Id In:Trigger.new]);
     // Add an opportunity for each account if it doesn't already have one.
     // Iterate through each account.
 
